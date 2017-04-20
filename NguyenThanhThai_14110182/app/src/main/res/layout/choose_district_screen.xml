@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/home_menu_background_color_pressed">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/cityItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="6.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingTop="6.0dip">
+
+            <ImageView
+                android:id="@+id/imgCheckStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stick_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtCityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="TP.HCM"
+                android:textColor="@color/red_rating"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/changeCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip">
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="10.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5.0dip"
+                    android:paddingBottom="2.0dip"
+                    android:paddingTop="2.0dip"
+                    android:src="@drawable/ic_change_city" />
+
+                <TextView
+                    android:id="@+id/tvDistrictCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:text="@string/CHANGE_CITY"
+                    android:textColor="#ff777777"
+                    android:textSize="@dimen/text_size_small_1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/home_new_list_view_line" />
+
+        <ExpandableListView
+            android:id="@+id/lvCity"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:cacheColorHint="#00000000"
+            android:childDivider="#ffeeeeee"
+            android:childIndicator="@drawable/ic_arrow_right"
+            android:divider="@color/home_new_list_view_line"
+            android:dividerHeight="1.0dip"
+            android:groupIndicator="@null"
+            android:indicatorLeft="@null"
+            android:listSelector="@android:color/transparent" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.100000024dip"
+            android:background="#ffdddddd" />
+
+        <TextView
+            android:id="@+id/linear_layout_bar_home_new_ui_close"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:text="@string/L_ACTION_CANCEL"
+            android:textColor="@color/micro_site_title_sub"
+            android:textSize="@dimen/text_size_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_layout_loading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <include layout="@layout/loading_layout" />
+    </RelativeLayout>
+</FrameLayout>

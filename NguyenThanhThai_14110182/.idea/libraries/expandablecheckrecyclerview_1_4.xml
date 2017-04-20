@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="expandablecheckrecyclerview-1.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/33e082518dc92eddac03e40c25e4ea8c862be7ba/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/33e082518dc92eddac03e40c25e4ea8c862be7ba/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thoughtbot/expandablecheckrecyclerview/1.4/a974191ab11bebf61e170f95a4d1868efea7d616/expandablecheckrecyclerview-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10.0dip"
+    android:paddingLeft="8.0dip"
+    android:paddingRight="8.0dip"
+    android:paddingTop="10.0dip">
+
+    <ImageView
+        android:id="@+id/imgCheckStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stick_icon" />
+
+    <TextView
+        android:id="@+id/txtCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_weight="1.0"
+        android:text="TP.HCM"
+        android:textColor="#ff333333"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnReviewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="5.0dip"
+        android:text="10 quận/huyện"
+        android:textColor="#ff777777"
+        android:textSize="@dimen/text_size_small_1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btnSetDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/round_button"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="5.0dip"
+        android:text="@string/L_ACTION_DEFAULT"
+        android:textColor="#ff0063e9"
+        android:textSize="@dimen/text_size_small_1"
+        android:textStyle="bold" />
+
+</LinearLayout>

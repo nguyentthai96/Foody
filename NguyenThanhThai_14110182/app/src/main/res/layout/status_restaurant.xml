@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/tn_padding_40dp"
+    android:layout_marginEnd="@dimen/tn_padding"
+    android:layout_marginTop="@dimen/tn_padding">
+
+    <TextView
+        android:id="@+id/iconComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_comment"
+        android:drawablePadding="5dp"
+        android:gravity="start|center_vertical"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/cameraImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginStart="@dimen/size_icon_tab_32"
+        android:drawableLeft="@drawable/ic_camera_24dp"
+        android:drawablePadding="5dp"
+        android:gravity="left|center_vertical"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/statusRe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:drawablePadding="5dp"
+        android:drawableEnd="@drawable/opening"
+        android:gravity="right|center_vertical"
+        android:text="Opening" />
+</LinearLayout>

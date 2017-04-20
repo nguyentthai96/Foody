@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:gravity="center"
+        android:text="@string/TEXT_DISCOVERY"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20.0dip" />
+
+    <TextView
+        android:id="@+id/tvTAD"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:gravity="center"
+        android:text="@string/TEXT_INSTANT_BOOK_AND_ORDER"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/vDelivery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffce2127"
+                android:gravity="center"
+                android:padding="10.0dip">
+
+                <ImageView
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/border_circle_white"
+                    android:padding="3.0dip"
+                    android:src="@drawable/ic_logo_deli" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30.0dip"
+                    android:src="@drawable/ic_delivery_logo" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:text="@string/TEXT_DELIVERY"
+                android:textSize="@dimen/text_size_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vTableNow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange_tran"
+                android:gravity="center"
+                android:padding="10.0dip">
+
+                <ImageView
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/border_circle_white"
+                    android:padding="3.0dip"
+                    android:src="@drawable/ic_logo_table" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/ic_table_now" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:text="@string/TEXT_SEARCH_SUGGEST_ITEM_TITLE0"
+                android:textSize="@dimen/text_size_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

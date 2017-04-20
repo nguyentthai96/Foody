@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhereToGoPlacesFragment">
+
+    <include
+        android:id="@+id/tabarFill"
+        layout="@layout/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/cancelAction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:text="@string/cancel"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tabarFill"
+        android:layout_marginBottom="@dimen/tab_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabarFill">
+
+        <com.example.nguyenthanhthai.foody.customview.RecyclerViewHeader
+            android:id="@+id/headRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ViewFlipper
+                    android:id="@+id/viewflipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dn_height_banner"
+                    android:flipInterval="2000"
+                    android:autoStart="true"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/imageViewHeaderOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/adver1" />
+
+                    <ImageView
+                        android:id="@+id/imageViewHeaderTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/adver2" />
+                </ViewFlipper>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewChild"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tabarFill"
+                    android:layout_marginTop="@dimen/dn_item_offset5" />
+            </LinearLayout>
+        </com.example.nguyenthanhthai.foody.customview.RecyclerViewHeader>
+    </LinearLayout>
+</RelativeLayout>

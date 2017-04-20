@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/dn_line_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/raitingRestaurant"
+            android:layout_width="@dimen/size_user_avatar_30"
+            android:layout_height="@dimen/size_user_avatar_30"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_green_rating"
+            android:paddingTop="5dp"
+            android:text="10"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Quán ăn Nguyễn Thành Thái"
+                android:textColor="@color/black"
+                android:textSize="@dimen/com_accountkit_title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Trước cửa đi ra là tới" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_img_res_180dp"
+        android:scaleType="centerCrop" />
+
+    <include layout="@layout/partial_layout_botton_ecard_table_now_bankcard_2" />
+
+    <include
+        android:id="@+id/feedBackContent1"
+        layout="@layout/feedback_res_item" />
+
+    <include
+        android:id="@+id/feedBackContent2"
+        layout="@layout/feedback_res_item" />
+
+    <include layout="@layout/status_restaurant" />
+</LinearLayout>

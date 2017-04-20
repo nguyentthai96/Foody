@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffcc0000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llCityHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/actionChangeDomain"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/list_item_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="5.0dip">
+
+            <ImageView
+                android:id="@+id/icDomain"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center"
+                android:padding="5.0dip"
+                android:src="@drawable/icon_anuong" />
+
+            <ImageView
+                android:layout_width="13.0dip"
+                android:layout_height="13.0dip"
+                android:layout_gravity="center"
+                android:paddingLeft="2.0dip"
+                android:paddingTop="2.0dip"
+                android:src="@drawable/ic_arrow_down"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dialog_round_corner_boder_bg_5">
+
+            <TextView
+                android:id="@+id/tvWhereToGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="4.0dip"
+                android:text="@string/WHERE_TO_GO"
+                android:textColor="#111111"
+                android:textSize="@dimen/text_size_small_2" />
+
+            <TextView
+                android:id="@+id/tvWhatToDo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_round_corner_left_boder_bg_2"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="4.0dip"
+                android:text="@string/WHAT_TO_DO"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/text_size_small_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/actionChangeCity"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/list_item_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="2.0dip"
+                    android:text="TP.HCM"
+                    android:textColor="#ff666465"
+                    android:textSize="@dimen/text_size_small_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" - "
+                    android:textColor="#ff666465"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtCountryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Việt Nam"
+                    android:textColor="#ff555555"
+                    android:textSize="@dimen/text_size_small_2"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="12.0dip"
+                    android:layout_height="12.0dip"
+                    android:layout_gravity="center"
+                    android:padding="1.0dip"
+                    android:src="@drawable/ic_arrow_down"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnNearMe"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@+id/plus"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_location_2"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:padding="9.0dip"
+            android:src="@drawable/ic_plus_action_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/actionChangeDomain2"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/actionChangeCity2"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_item_nearby" />
+    </RelativeLayout>
+</LinearLayout>

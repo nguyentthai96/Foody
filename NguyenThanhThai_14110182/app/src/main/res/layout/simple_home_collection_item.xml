@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="@dimen/bottom_sheet_list_icon_size"
+            android:layout_height="@dimen/bottom_sheet_list_icon_size"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="6.0dip"
+            android:src="@drawable/icon_cuoihoi" />
+
+        <TextView
+            android:id="@+id/textItemListName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Medium Text"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size_small" />
+
+        <CheckBox
+            android:id="@+id/chkLastestAddedToList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/stick_checkbox"
+            android:checked="true"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffdedede" />
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/size_user_avatar_30"
+        android:layout_height="@dimen/size_user_avatar_30"
+        android:layout_margin="5dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/accNameDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Nguyễn Thành Thái"
+                android:textColor="@color/black"
+                android:textSize="@dimen/com_accountkit_title_text_size" />
+
+            <com.example.nguyenthanhthai.foody.customview.TextViewRating
+                android:id="@+id/raitingFeedBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.4"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/feedBackContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Quán này có lâu lắm rồi mà sao món ăn vẫn dỡ như xưa. Ôi món ăn kém quá đi" />
+    </LinearLayout>
+</LinearLayout>

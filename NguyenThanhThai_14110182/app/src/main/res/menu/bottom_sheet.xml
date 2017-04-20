@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_new_ui_linear_layout_scan_coupon"
+        android:icon="@drawable/ic_ecoupon"
+        android:title="@string/TEXT_SCAN_E_COUPON" />
+
+    <item
+        android:id="@+id/home_new_ui_linear_layout_upload_photo"
+        android:icon="@drawable/icon_home_upload_image"
+        android:title="@string/TEXT_UPLOAD_PHOTO" />
+
+
+    <item
+        android:id="@+id/home_new_ui_linear_layout_checkin"
+        android:icon="@drawable/icon_home_checkin"
+        android:title="@string/TEXT_CHECKIN" />
+
+    <item
+        android:id="@+id/home_new_ui_linear_layout_write_review"
+        android:icon="@drawable/icon_home_review"
+        android:title="@string/TEXT_WRITE_REVIEW" />
+    <item
+        android:id="@+id/home_new_ui_linear_layout_add_new_place"
+        android:icon="@drawable/icon_home_add_new_place"
+        android:title="@string/TEXT_SEARCH_ADD_NEW_PLACE" />
+    <item
+        android:id="@+id/home_new_ui_linear_layout_add_promotion"
+        android:icon="@drawable/icon_home_add_promotion"
+        android:title="@string/TEXT_ADD_PROMOTION" />
+</menu>

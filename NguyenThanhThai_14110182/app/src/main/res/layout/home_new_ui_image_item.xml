@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_new_ui_linear_layout_image_item_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:id="@+id/simpleVV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"/>
+
+        <MediaController
+            android:id="@+id/llPlayVideo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/btMoreRes"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center|right|top"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="-2.0dip"
+            android:src="@drawable/ic_more_menu" />
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbarSize"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="-8.0dip"
+            android:gravity="center_vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:visibility="gone"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitleTextAppearance="@style/Toolbar.SubTitleText"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+        <LinearLayout
+            android:id="@+id/home_new_ui_action_linear_layout_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="36.0dip"
+                android:layout_height="24.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2.0dip"
+                android:src="@drawable/icon_home_view_more" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/home_new_ui_linear_layout_pro_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/home_new_ui_linear_layout_pro_photo_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginTop="1.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_weight="1.0"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_weight="1.0"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_weight="1.0"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_new_ui_linear_layout_pro_photo_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_weight="1.0"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_weight="1.0"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="60.0dip"
+                android:layout_weight="1.0"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--TODO-->
+    <include layout="@layout/partial_layout_botton_ecard_table_now_bankcard_2" />
+
+    <LinearLayout
+        android:id="@+id/llComments"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

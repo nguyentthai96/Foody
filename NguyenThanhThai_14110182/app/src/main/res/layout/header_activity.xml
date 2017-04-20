@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="#ffcc0000"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/list_item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_arrow_left_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nav_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/txtDone"
+            android:layout_toRightOf="@id/llBack"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/text_size_big_title" />
+
+        <TextView
+            android:id="@+id/txtDone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/list_item_selector"
+            android:clickable="true"
+            android:gravity="center|right"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:text="@string/L_ACTION_DONE"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/text_size_big_title" />
+    </RelativeLayout>
+</LinearLayout>

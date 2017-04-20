@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bar_glass" />
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="0.0010000467px" android:color="@color/line_gray1" />
+            <gradient android:startColor="@color/transparent_white_95" android:endColor="@color/transparent_white_95" android:centerColor="@color/transparent_white_95" />
+        </shape>
+    </item>
+</layer-list>

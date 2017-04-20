@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nguyenthanhthai.foody.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <TabWidget
+            android:id="@+id/tabHolder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:layout_alignBottom="@+id/pager"
+            android:layout_gravity="bottom"
+            android:background="@drawable/fake_blur_background"
+            android:visibility="visible">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12.0dip"
+                android:tag="0"
+                app:srcCompat="@drawable/vector_ic_home_fill" />
+            <!--app:srcCompat="@drawable/ic_home_tab"/>-->
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="11.0dip"
+                android:tag="1"
+                app:srcCompat="@drawable/ic_collection_tab" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12.0dip"
+                android:tag="2"
+                app:srcCompat="@drawable/ic_search_tab" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:tag="3">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="13.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="13.0dip"
+                    app:srcCompat="@drawable/ic_notification_tab" />
+
+                <View
+                    android:id="@+id/flatNotification"
+                    android:layout_width="@dimen/item_offset12"
+                    android:layout_height="@dimen/item_offset12"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@id/ring"
+                    android:layout_marginRight="@dimen/item_offset8"
+                    android:layout_marginTop="@dimen/item_offset8"
+                    android:background="@drawable/notify_corner"
+                    android:gravity="center"
+                    android:minWidth="@dimen/item_offset12"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/llTabMore"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="13.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="13.0dip"
+                android:tag="4"
+                app:srcCompat="@drawable/ic_user_tab" />
+
+            <LinearLayout
+                android:id="@+id/llTabProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:tag="5"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+        </TabWidget>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--android:layout_marginBottom="@dimen/tab_height"-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

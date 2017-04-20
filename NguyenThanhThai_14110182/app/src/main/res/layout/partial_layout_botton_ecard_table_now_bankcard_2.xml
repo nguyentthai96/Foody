@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffeeeeee"
+    android:orientation="horizontal"
+    android:paddingBottom="3.0dip"
+    android:paddingLeft="1.0dip"
+    android:paddingRight="3.0dip"
+    android:paddingTop="3.0dip">
+
+    <LinearLayout
+        android:id="@+id/btn_delivery_now"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_border_delivery_now"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ic_delivery_now"
+            android:layout_width="fill_parent"
+            android:layout_height="18.0dip"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_delivery_man" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/TEXT_DELIVERY"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_table_now"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_border_table_now"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ic_table_now"
+            android:layout_width="@dimen/caption_profile_align_1wd"
+            android:layout_height="18.0dip"
+            android:padding="2.5dip"
+            android:src="@drawable/ic_table_logo" />
+
+        <TextView
+            android:id="@+id/text_description_table_now"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_table_now"
+            android:layout_marginTop="1.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/txt_offer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_e_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_border_e_card"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ic_ecard"
+            android:layout_width="50.0dip"
+            android:layout_height="18.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="2.0dip"
+            android:src="@drawable/ecard_tran" />
+
+        <TextView
+            android:id="@+id/text_description_ecard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title_ecard"
+            android:layout_marginTop="1.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/txt_discount_for_e_card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_bank_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_border_bank_card"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_bank_card"
+            android:layout_width="@dimen/width_img_bank_card"
+            android:layout_height="18.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_filter_bankcard" />
+
+        <TextView
+            android:id="@+id/text_description_bank_card"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title_bank_card"
+            android:layout_marginTop="1.0dip"
+            android:layout_toLeftOf="@+id/ic_bank_card"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/txt_offer_bank_card_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="#ffe83948"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_title_bank_card"
+            android:layout_toLeftOf="@id/ic_bank_card"
+            android:lines="1"
+            android:text="in-store"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_title_bank_card"
+            android:layout_toLeftOf="@id/ic_bank_card"
+            android:lines="1"
+            android:text="Promotion"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_title_bank_card"
+            android:layout_toLeftOf="@id/ic_bank_card"
+            android:lines="1"
+            android:text="@string/txt_offer_bank_card_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
